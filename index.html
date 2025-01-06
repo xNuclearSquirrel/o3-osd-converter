@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSD File Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OSD File Converter</h1>
+        
+        <label for="inputFile">Input File:</label>
+        <input type="file" id="inputFile">
+        <p class="error" id="inputFileError"></p>
+        
+        <label for="outputFileName">Output File Name:</label>
+        <input type="text" id="outputFileName" placeholder="Optional: Leave blank to use input file name">
+        
+        <div class="checkbox-group">
+            <div class="checkbox-row">
+                <label>
+                    <input type="checkbox" id="createVista" onclick="toggleFPSField()">
+                    Vista OSD File
+                </label>
+                <div class="fps-container">
+                    <label for="fpsInput">FPS:</label>
+                    <input type="number" id="fpsInput" placeholder="30-120" min="30" max="120" disabled>
+                </div>
+            </div>
+            <label>
+                <input type="checkbox" id="createWalksnail">
+                Walksnail OSD File
+            </label>
+        </div>
+        <p class="error" id="checkboxError"></p>
+        <p class="error" id="fpsError"></p>
+        
+        <button id="convertButton">Convert</button>
+        <p class="success" id="successMessage"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
