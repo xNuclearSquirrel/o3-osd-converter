@@ -6,99 +6,64 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: #f4f4f9;
-}
-
-.container {
+  }
+  
+  .container {
     background: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Reduced width */
+    width: 300px;
     text-align: center;
-}
-
-h1 {
+  }
+  
+  h1 {
     margin-bottom: 20px;
     font-size: 20px;
-}
-
-label {
+  }
+  
+  label {
     display: block;
     margin: 10px 0 5px;
     text-align: left;
-}
-
-input[type="file"],
-input[type="text"],
-input[type="number"] {
-    width: calc(100% - 20px); /* Add padding space to the right */
+  }
+  
+  input[type="file"],
+  input[type="text"],
+  input[type="number"] {
+    width: calc(100% - 20px);
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-.checkbox-group {
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.checkbox-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Space between checkbox and FPS container */
-    width: 100%; /* Ensure alignment with input fields */
-}
-
-.checkbox-row label {
-    white-space: nowrap; /* Prevent breaking into two lines */
-}
-
-.checkbox-row input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-.checkbox-row .fps-container {
-    display: flex;
-    align-items: center; /* Vertically center FPS label and input */
-    justify-content: flex-end; /* Align FPS content to the right */
-    width: calc(100% - 20px); /* Align with other input fields */
-    gap: 5px; /* Space between FPS label and input */
-}
-
-.checkbox-row input[type="number"] {
-    width: 80px; /* Narrower FPS input field */
-    text-align: center;
-}
-
-button {
+  }
+  
+  button {
     background-color: #007bff;
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
-}
-
-button:disabled {
+  }
+  
+  button:disabled {
     background-color: #cccccc;
-}
-
-/* Error Messages */
-.error {
+  }
+  
+  .error {
     color: red;
     font-size: 12px;
-    height: 16px; /* Fixed height for static positioning */
+    height: 16px;
     margin: 5px 0 0;
-    overflow: hidden; /* Prevents layout breaking with unexpected content */
-}
-
-.success {
+    overflow: hidden;
+  }
+  
+  .success {
     color: green;
     font-size: 12px;
     margin-top: 10px;
-    height: 16px; /* Fixed height for static positioning */
-    overflow: hidden; /* Prevents layout breaking with unexpected content */
-}
+    height: 16px;
+    overflow: hidden;
+  }
+  
